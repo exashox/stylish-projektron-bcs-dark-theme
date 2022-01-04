@@ -1,0 +1,137 @@
+html,
+body,
+div,
+table,
+td,
+table.list td.listheader,
+table.list td.content table.indention td.treeMenu a.submenu_openlink,
+span.label,
+div.listdisplay.useChronicleCommentLayout table td.additionalContentCol.content,
+div.listdisplay.useChronicleCommentLayout table td.commentCol.content,
+div.listdisplay.useChronicleCommentLayout table tr.row.isVersion td.content.additionalContentCol,
+div.listdisplay.useChronicleCommentLayout table tr.row.isVersion td.content.commentCol {
+    background-color: #333 !important;
+}
+
+span.calendarControlSeparator,
+table.list td.listheader:hover,
+table.list td.listheader:hover div,
+table.list td.content table.indention td.treeMenu a.submenu_openlink:hover,
+table.list td.content table.indention td.treeMenu a.submenu_openlink:hover div,
+td.component_header_right a.default_button,
+td.component_header_right a:not(.settings_visiblity_toggle):not(.settings_visiblity_toggle_on),
+td.component_header_right button,
+td.component_header_right button.CreateLinkFormButton,
+td.component_header_right button:not(.settings_visiblity_toggle):not(.settings_visiblity_toggle_on) {
+ 	background-color: #222 !important;   
+}
+
+td.component_header_right a.default_button:hover,
+td.component_header_right a:not(.settings_visiblity_toggle):not(.settings_visiblity_toggle_on):hover,
+td.component_header_right button:hover,
+td.component_header_right button.CreateLinkFormButton:hover,
+td.component_header_right button:not(.settings_visiblity_toggle):not(.settings_visiblity_toggle_on):hover {
+    background-color: #444 !important;    
+}
+
+tr.row > .ticket_communication_version .displaylabel {
+    color: #888 !important;
+}
+
+textarea,
+input,
+select,
+.DurationAttribute.edit,
+.ExplicitChange_unchanged span.DurationAttribute.edit,
+.settingsAttributeLabelWithOperator,
+table.pageTabsInner span.other,
+table.pageTabsInner span.current,
+a.menuButton {
+    background-color: #222 !important;
+    color: #aaa !important;   
+}
+
+.settingsAttributeLabelWithOperator 
+
+html,
+table,
+span,
+table.pageTabsInner td.currentPageTab_jq a,
+table.pageTabsInner td.inactivePageTab_jq a,
+.ExplicitChange_unchanged span.DurationAttribute.edit span,
+.footer_menu_bar div.footer_menu_label,
+.alternativeFieldSetLayout .component_header .submenu_openlink > .title,
+.alternativeFieldSetLayout .component_header .title.NoMenu,
+.autosuggestion .fieldset_legend,
+td.componenttitle,
+td.fieldset_legend,
+.alternativeFieldSetLayout .attributeRowContainer .attributeLabelContainer,
+.jexlContextAttributeHeader {
+    color: #bbb !important;   
+}
+
+table.list td.content,
+#fixedColumnThead, 
+table.list td.columnset_header, 
+table.list td.listheader, 
+td.editheader,
+html,
+div,
+tbody,
+table,
+td,
+tr,
+table.list td.listheader,
+table.list td.content table.indention td.treeMenu a.submenu_openlink,
+table.list > tbody > tr:last-child > td.content,
+div.listdisplay.useChronicleCommentLayout td.leftGreenTimeline > .objectimageattributedisplay, 
+div.listdisplay.useChronicleCommentLayout td.leftGreenTimeline > a,
+div.listdisplay.useChronicleCommentLayout td.rightBlueTimeline > .objectimageattributedisplay,
+div.listdisplay.useChronicleCommentLayout td.rightBlueTimeline > a {
+    border-color: #666 !important;
+}
+
+div.listdisplay.useChronicleCommentLayout table td.rightBlueTimeline.content.newTicketLayoutVersionsObjectImage::before,
+div.listdisplay.useChronicleCommentLayout table tr.row.isVersion td.rightBlueTimeline.content.newTicketLayoutVersionsObjectImage::before {
+	background-image: none;   
+}
+
+ins {
+    border: 1px solid rgb(40,190,40);
+        border-top-width: 1px;
+        border-right-width: 1px;
+        border-bottom-width: 1px;
+        border-left-width: 1px;
+    border-width: 0 0 1px;
+    text-decoration: none;
+    font-weight: 400;
+}
+.noChanges > span, .structuralChanges > span, ins {
+    background-color: rgba(80,250,83,.1);
+    color: #9cd09c;
+}
+
+td.component_header_right a.default_button,
+td.component_header_right a:not(.settings_visiblity_toggle):not(.settings_visiblity_toggle_on),
+td.component_header_right button,
+td.component_header_right button.CreateLinkFormButton,
+td.component_header_right button:not(.settings_visiblity_toggle):not(.settings_visiblity_toggle_on) {
+	background-image: none !important;   
+}
+
+a {
+    color: #42b0f6 !important;
+}
+
+a:hover {
+    color: #1280c6 !important;
+}
+
+div.listdisplay.useChronicleCommentLayout .commentMenu a.submenu_openlink,
+a.showConsultationRequestsButton span {
+	color: transparent !important;   
+}
+
+div.listDisplayHeaderContainer {
+	transition: background-color .1s;
+}
