@@ -1,18 +1,19 @@
+/* backgrounds */
 html,
 body,
-div,
-table,
-td,
+span.label,
 table.list td.listheader,
 table.list td.content table.indention td.treeMenu a.submenu_openlink,
-span.label,
+div.page_content,
 div.listdisplay.useChronicleCommentLayout table td.additionalContentCol.content,
 div.listdisplay.useChronicleCommentLayout table td.commentCol.content,
 div.listdisplay.useChronicleCommentLayout table tr.row.isVersion td.content.additionalContentCol,
-div.listdisplay.useChronicleCommentLayout table tr.row.isVersion td.content.commentCol {
-    background-color: #333 !important;
+div.listdisplay.useChronicleCommentLayout table tr.row.isVersion td.content.commentCol,
+div.pn_workspace_mybcs {
+  background-color: #333;
 }
 
+/* controls */
 span.calendarControlSeparator,
 table.list td.listheader:hover,
 table.list td.listheader:hover div,
@@ -22,22 +23,45 @@ td.component_header_right a.default_button,
 td.component_header_right a:not(.settings_visiblity_toggle):not(.settings_visiblity_toggle_on),
 td.component_header_right button,
 td.component_header_right button.CreateLinkFormButton,
-td.component_header_right button:not(.settings_visiblity_toggle):not(.settings_visiblity_toggle_on) {
- 	background-color: #222 !important;   
+td.component_header_right button:not(.settings_visiblity_toggle):not(.settings_visiblity_toggle_on),
+table.pageTabsInner span.other,
+table.pageTabsInner td.more,
+div.permanent_settings td.selectionbar,
+table.boarddisplay_table td.boardelement,
+.boarddisplay_table .component_header_ListDisplay,
+.boarddisplay_table .component_header_TreeDisplay,
+div.gridster .component_header_ListDisplay,
+div.gridster .component_header_TreeDisplay,
+table.list tbody tr.row,
+table.list tbody td.content,
+div.gridster table.list td.columnset_header,
+div.gridster table.list td.listheader,
+table.boarddisplay_table table.list td.columnset_header,
+table.boarddisplay_table table.list td.listheader,
+input.button,
+span.today,
+table.list tbody tr.default td.content.today,
+table.list tbody tr.JProject_operative td.content.today,
+table.list tbody tr.JProject_project td.content.today,
+td.today {
+  background-color: #222;
 }
 
+/* Controls Hover */
 td.component_header_right a.default_button:hover,
 td.component_header_right a:not(.settings_visiblity_toggle):not(.settings_visiblity_toggle_on):hover,
 td.component_header_right button:hover,
 td.component_header_right button.CreateLinkFormButton:hover,
-td.component_header_right button:not(.settings_visiblity_toggle):not(.settings_visiblity_toggle_on):hover {
-    background-color: #444 !important;    
+td.component_header_right button:not(.settings_visiblity_toggle):not(.settings_visiblity_toggle_on):hover,
+input.button:hover {
+  background-color: #444;
 }
 
-tr.row > .ticket_communication_version .displaylabel {
-    color: #888 !important;
+tr.row>.ticket_communication_version .displaylabel {
+  color: #888;
 }
 
+/* Fields */
 textarea,
 input,
 select,
@@ -46,92 +70,116 @@ select,
 .settingsAttributeLabelWithOperator,
 table.pageTabsInner span.other,
 table.pageTabsInner span.current,
-a.menuButton {
-    background-color: #222 !important;
-    color: #aaa !important;   
+a.menuButton,
+input.button {
+  background-color: #222;
+  color: #aaa;
 }
 
-.settingsAttributeLabelWithOperator 
-
+/* text */
 html,
+body,
 table,
 span,
 table.pageTabsInner td.currentPageTab_jq a,
 table.pageTabsInner td.inactivePageTab_jq a,
 .ExplicitChange_unchanged span.DurationAttribute.edit span,
 .footer_menu_bar div.footer_menu_label,
-.alternativeFieldSetLayout .component_header .submenu_openlink > .title,
+.alternativeFieldSetLayout .component_header .submenu_openlink>.title,
 .alternativeFieldSetLayout .component_header .title.NoMenu,
 .autosuggestion .fieldset_legend,
 td.componenttitle,
 td.fieldset_legend,
 .alternativeFieldSetLayout .attributeRowContainer .attributeLabelContainer,
-.jexlContextAttributeHeader {
-    color: #bbb !important;   
-}
-
-table.list td.content,
-#fixedColumnThead, 
-table.list td.columnset_header, 
-table.list td.listheader, 
-td.editheader,
-html,
-div,
-tbody,
-table,
-td,
-tr,
-table.list td.listheader,
-table.list td.content table.indention td.treeMenu a.submenu_openlink,
-table.list > tbody > tr:last-child > td.content,
-div.listdisplay.useChronicleCommentLayout td.leftGreenTimeline > .objectimageattributedisplay, 
-div.listdisplay.useChronicleCommentLayout td.leftGreenTimeline > a,
-div.listdisplay.useChronicleCommentLayout td.rightBlueTimeline > .objectimageattributedisplay,
-div.listdisplay.useChronicleCommentLayout td.rightBlueTimeline > a {
-    border-color: #666 !important;
-}
-
-div.listdisplay.useChronicleCommentLayout table td.rightBlueTimeline.content.newTicketLayoutVersionsObjectImage::before,
-div.listdisplay.useChronicleCommentLayout table tr.row.isVersion td.rightBlueTimeline.content.newTicketLayoutVersionsObjectImage::before {
-	background-image: none;   
-}
-
-ins {
-    border: 1px solid rgb(40,190,40);
-        border-top-width: 1px;
-        border-right-width: 1px;
-        border-bottom-width: 1px;
-        border-left-width: 1px;
-    border-width: 0 0 1px;
-    text-decoration: none;
-    font-weight: 400;
-}
-.noChanges > span, .structuralChanges > span, ins {
-    background-color: rgba(80,250,83,.1);
-    color: #9cd09c;
-}
-
+.jexlContextAttributeHeader,
+div.settingselector>a.submenu_openlink:hover span.title,
+div.component_header span.title,
+span.allowanceTitle,
+span.pageTitle,
+div.entitypathtitle_entity span,
 td.component_header_right a.default_button,
 td.component_header_right a:not(.settings_visiblity_toggle):not(.settings_visiblity_toggle_on),
 td.component_header_right button,
 td.component_header_right button.CreateLinkFormButton,
-td.component_header_right button:not(.settings_visiblity_toggle):not(.settings_visiblity_toggle_on) {
-	background-image: none !important;   
+td.component_header_right button:not(.settings_visiblity_toggle):not(.settings_visiblity_toggle_on),
+.calendarcontrol_datedisplay,
+div.permanent_settings td.selectionbar select,
+td.selection_bar_attribute select {
+  color: #bbb;
 }
 
-a {
-    color: #42b0f6 !important;
+/* borders */
+table.list td.content,
+table.list td.columnset_header,
+table.list td.listheader,
+td.editheader,
+table.list td.listheader,
+table.list td.content table.indention td.treeMenu a.submenu_openlink,
+table.list>tbody>tr:last-child>td.content,
+div.listdisplay.useChronicleCommentLayout td.leftGreenTimeline>.objectimageattributedisplay,
+div.listdisplay.useChronicleCommentLayout td.leftGreenTimeline>a,
+div.listdisplay.useChronicleCommentLayout td.rightBlueTimeline>.objectimageattributedisplay,
+div.listdisplay.useChronicleCommentLayout td.rightBlueTimeline>a,
+table.pageTabsInner span.other,
+table.pageTabsInner td.more,
+table.list>tbody>tr:last-child>td.content {
+  border-color: #666;
 }
 
-a:hover {
-    color: #1280c6 !important;
+div.global_menu a.metanavigation_bookmark,
+div.global_menu a.metanavigation_help,
+div.global_menu div.stopwatchcontainer,
+div.global_menu a.metanavigation_user {
+  border-color: #333;
+}
+
+/* remove image highlights */
+div.listdisplay.useChronicleCommentLayout table td.rightBlueTimeline.content.newTicketLayoutVersionsObjectImage::before,
+div.listdisplay.useChronicleCommentLayout table tr.row.isVersion td.rightBlueTimeline.content.newTicketLayoutVersionsObjectImage::before,
+td.component_header_right a.default_button,
+td.component_header_right a:not(.settings_visiblity_toggle):not(.settings_visiblity_toggle_on),
+td.component_header_right button,
+td.component_header_right button.CreateLinkFormButton,
+td.component_header_right button:not(.settings_visiblity_toggle):not(.settings_visiblity_toggle_on),
+table.pageTabsInner td span.other span.fading,
+table.pageTabsInner td span.current span.fading,
+input.button {
+  background-image: none;
+}
+
+/* Override impotant */
+.fixedNavigationWrapper_style a.alternativeActionSubMenuLink,
+td.component_header_right a.alternativeActionSubMenuLink,
+td.component_header_right a.alternativeSubMenuLink {
+  background-image: none !important;
 }
 
 div.listdisplay.useChronicleCommentLayout .commentMenu a.submenu_openlink,
 a.showConsultationRequestsButton span {
-	color: transparent !important;   
+  color: transparent;
 }
 
+/* highlights */
+ins {
+  border: 1px solid rgb(40, 190, 40);
+}
+
+.noChanges>span,
+.structuralChanges>span,
+ins {
+  background-color: rgba(80, 250, 83, 0.1);
+  color: #9cd09c;
+}
+
+a {
+  color: #42b0f6;
+}
+
+a:hover {
+  color: #1280c6;
+}
+
+/* animations */
 div.listDisplayHeaderContainer {
-	transition: background-color .1s;
+  transition: background-color 0.1s;
 }
