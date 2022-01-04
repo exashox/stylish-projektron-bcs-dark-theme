@@ -12,8 +12,8 @@
 
 ## 1.1 Installing Stylish
 
-1. Go to the Stylish for [Chrome](https://chrome.google.com/webstore/detail/stylish-custom-themes-for/fjnbnpbmkenffdnngjfgmeleoegfcffe?hl=de) or [FireFox](https://addons.mozilla.org/de/firefox/addon/stylish/) install page
-2. Click on the 'Add to Chrome' button
+1. Go to the Stylish for [Chrome](https://chrome.google.com/webstore/detail/stylish-custom-themes-for/fjnbnpbmkenffdnngjfgmeleoegfcffe?hl=de) or [Firefox](https://addons.mozilla.org/de/firefox/addon/stylish/) install page
+2. Click on the 'Add to Chrome' or 'Add to Firefox' button
 3. Click 'Add' on the confirmation dialog
 4. Stylish's icon will be added to your browser's toolbar
 
