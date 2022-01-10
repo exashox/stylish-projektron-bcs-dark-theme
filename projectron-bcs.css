@@ -95,11 +95,14 @@ input.textfield,
 .ExplicitChange_unchanged span.DurationAttribute.edit,
 .ExplicitChange_unchanged span.DurationAttribute.edit span,
 .DurationAttribute.edit,
-.TimeAttribute {
+.TimeAttribute,
+.TimeAttribute.readOnly,
+div.listdisplay.useChronicleCommentLayout table tr.row.isVersion td.content.additionalContentCol,
+div.listdisplay.useChronicleCommentLayout table tr.row.isVersion td.content.commentCol {
   background-color: #222 !important;
 }
 
-/* Controls Hover */
+/* controls hover */
 div.listdisplay table.list tbody tr.row.markRowAsSelected:hover>td.slider_cell,
 div.listdisplay table.list tbody tr.row.markRowAsSelected:hover>td:not([rowspan]),
 div.listdisplay table.list tbody tr.row:hover>td.slider_cell,
@@ -124,7 +127,7 @@ a.menuButton:hover,
   background-color: #444;
 }
 
-/* Override impotant */
+/* override impotant */
 table.list td.listheader:hover,
 table.list td.listheader:hover .listDisplayHeaderContainer,
 table.pageTabsInner span.other:hover,
@@ -252,6 +255,7 @@ span.unsortable,
 .leftFixedNavigationContent>span.fixedNavigationClonedLink,
 div.fixedNavigationWrapper_style div.miniNavLinkDiv .fixedNavigationClonedLink,
 a.tabselector,
+span.entitypathtitle_extension,
 input.textfield:disabled,
 select:disabled,
 textarea:disabled {
@@ -272,7 +276,10 @@ table.list td.listheader_today {
   color: #bbf;
 }
 
-table.list td.listheader_holyday {
+table.list td.listheader_holyday,
+td.calendar_header_outofmonth a.event_sunday,
+td.calendar_header a.event_sunday,
+span.calendar_holiday_info {
   color: #a55;
 }
 
@@ -326,7 +333,11 @@ div.component_separator {
 table.onlyfixedTableHeaderResizeableStyle td.columnset_header,
 table.onlyfixedTableHeaderResizeableStyle td.listheader,
 table.onlyfixedTableHeaderResizeableStyle tr.calendar_weekday>td,
-table.onlyfixedTableHeaderResizeableStyle {
+table.onlyfixedTableHeaderResizeableStyle,
+div.listdisplay.useChronicleCommentLayout td.leftGreenTimeline>.objectimageattributedisplay,
+div.listdisplay.useChronicleCommentLayout td.leftGreenTimeline>a,
+div.listdisplay.useChronicleCommentLayout td.rightBlueTimeline>.objectimageattributedisplay,
+div.listdisplay.useChronicleCommentLayout td.rightBlueTimeline>a {
   border-color: #666 !important;
 }
 
