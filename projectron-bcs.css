@@ -87,7 +87,16 @@ button.clearButton,
 .internalButtons button.imagebutton,
 div.fixedNavigationWrapper_style div.miniNavLinkDiv a.fixedNavigationClonedLink:hover,
 input.textfield,
-.textareaParent textarea {
+.textareaParent textarea,
+.LikeTabSelector .radiobuttons input[type="radio"]:checked+label,
+.newRadioButtons .radiobuttons input[type="radio"]:checked+label,
+.tabselector.tabselectorActive,
+.LikeTabSelector .radiobuttons,
+.newRadioButtons .radiobuttons,
+.tabselectorBackground,
+.richTextEditor_jq,
+.CreateFormAttribute,
+.customScroll {
   background-color: #222;
 }
 
@@ -123,6 +132,7 @@ input.button:hover,
 textarea:hover,
 select:hover,
 a.menuButton:hover,
+div.token_container_jq .tokenInnerButtonContainer button.imagebutton:hover,
 .gs-resize-handle-both {
   background-color: #444;
 }
@@ -326,7 +336,9 @@ div.submenu_layer table td.separated a,
 div.submenu_layer table tr.settings_separator td,
 .footer_menu_bar.isOpened.isOpenedOnTop div.submenu_layer>table,
 table.boarddisplay_table table.component_footer.listdisplay_footer,
-div.component_separator {
+div.component_separator,
+.internalButtons button.imagebutton,
+div.token_container_jq .tokenInnerButtonContainer {
   border-color: #666;
 }
 
