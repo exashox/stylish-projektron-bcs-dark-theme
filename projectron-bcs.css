@@ -9,69 +9,108 @@ div.listdisplay.useChronicleCommentLayout table td.additionalContentCol.content,
 div.listdisplay.useChronicleCommentLayout table td.commentCol.content,
 div.listdisplay.useChronicleCommentLayout table tr.row.isVersion td.content.additionalContentCol,
 div.listdisplay.useChronicleCommentLayout table tr.row.isVersion td.content.commentCol,
-div.pn_workspace_mybcs {
+div.pn_workspace_mybcs,
+div.submenu_layer {
   background-color: #333;
 }
 
 /* controls */
-span.calendarControlSeparator,
+div.gridster .component_header_ListDisplay,
+div.gridster .component_header_TreeDisplay,
+div.permanent_settings td.selectionbar,
+div.boardelement_content .settingsDialog_ListDisplay,
+div.boardelement_content .settingsDialog_TreeDisplay,
+div.gridster table.list td.columnset_header,
+div.gridster table.list td.listheader,
+div.gridster>ul>li,
+div.token_container_jq,
+.showAsTokens .relationCell>a.objectcontent,
+.showAsTokens .relationCell>span,
+div.token_jq,
 table.list td.listheader:hover,
 table.list td.listheader:hover div,
 table.list td.content table.indention td.treeMenu a.submenu_openlink:hover,
 table.list td.content table.indention td.treeMenu a.submenu_openlink:hover div,
+table.pageTabsInner span.other,
+table.pageTabsInner td.more,
+table.boarddisplay_table td.boardelement,
+.boarddisplay_table .component_header_ListDisplay,
+.boarddisplay_table .component_header_TreeDisplay,
+table.list tbody tr.row,
+table.list tbody td.content,
+table.boarddisplay_table table.list td.columnset_header,
+table.boarddisplay_table table.list td.listheader,
+table.list tbody tr.default td.content.today,
+table.list tbody tr.JProject_operative td.content.today,
+table.list tbody tr.JProject_project td.content.today,
+td.today,
 td.component_header_right a.default_button,
 td.component_header_right a:not(.settings_visiblity_toggle):not(.settings_visiblity_toggle_on),
 td.component_header_right button,
 td.component_header_right button.CreateLinkFormButton,
 td.component_header_right button:not(.settings_visiblity_toggle):not(.settings_visiblity_toggle_on),
-table.pageTabsInner span.other,
-table.pageTabsInner td.more,
-div.permanent_settings td.selectionbar,
-table.boarddisplay_table td.boardelement,
-.boarddisplay_table .component_header_ListDisplay,
-.boarddisplay_table .component_header_TreeDisplay,
-div.gridster .component_header_ListDisplay,
-div.gridster .component_header_TreeDisplay,
-table.list tbody tr.row,
-table.list tbody td.content,
-div.gridster table.list td.columnset_header,
-div.gridster table.list td.listheader,
-table.boarddisplay_table table.list td.columnset_header,
-table.boarddisplay_table table.list td.listheader,
-input.button,
+.filterEntryRow>td,
+span.calendarControlSeparator,
 span.today,
-table.list tbody tr.default td.content.today,
-table.list tbody tr.JProject_operative td.content.today,
-table.list tbody tr.JProject_project td.content.today,
-td.today {
+input.button,
+input.textfield {
   background-color: #222;
 }
 
 /* Controls Hover */
+div.listdisplay table.list tbody tr.row.markRowAsSelected:hover>td.slider_cell,
+div.listdisplay table.list tbody tr.row.markRowAsSelected:hover>td:not([rowspan]),
+div.listdisplay table.list tbody tr.row:hover>td.slider_cell,
+div.listdisplay table.list tbody tr.row:hover>td:not([rowspan]),
+table.pageTabsInner:hover td.more,
 td.component_header_right a.default_button:hover,
 td.component_header_right a:not(.settings_visiblity_toggle):not(.settings_visiblity_toggle_on):hover,
 td.component_header_right button:hover,
 td.component_header_right button.CreateLinkFormButton:hover,
 td.component_header_right button:not(.settings_visiblity_toggle):not(.settings_visiblity_toggle_on):hover,
-input.button:hover {
+input.button:hover,
+.DurationAttribute.edit:hover,
+.ExplicitChange_unchanged span.DurationAttribute.edit:hover,
+.settingsAttributeLabelWithOperator:hover,
+input:hover,
+input.button:hover,
+textarea:hover,
+select:hover,
+a.menuButton:hover,
+.gs-resize-handle-both {
   background-color: #444;
+}
+
+/* Override impotant */
+table.list td.listheader:hover,
+table.list td.listheader:hover .listDisplayHeaderContainer,
+table.pageTabsInner span.other:hover,
+table.pageTabsInner span.current:hover {
+  background-color: #444 !important;
 }
 
 tr.row>.ticket_communication_version .displaylabel {
   color: #888;
 }
 
+/* Selected */
+div.listdisplay table.list tbody tr.markRowAsSelected td.blueMarkRow,
+div.token_focus_jq {
+  background-color: #44445a !important;
+  border-color: #666;
+}
+
 /* Fields */
-textarea,
-input,
-select,
 .DurationAttribute.edit,
 .ExplicitChange_unchanged span.DurationAttribute.edit,
 .settingsAttributeLabelWithOperator,
 table.pageTabsInner span.other,
 table.pageTabsInner span.current,
-a.menuButton,
-input.button {
+input,
+input.button,
+textarea,
+select,
+a.menuButton {
   background-color: #222;
   color: #aaa;
 }
@@ -150,7 +189,8 @@ input.button {
 /* Override impotant */
 .fixedNavigationWrapper_style a.alternativeActionSubMenuLink,
 td.component_header_right a.alternativeActionSubMenuLink,
-td.component_header_right a.alternativeSubMenuLink {
+td.component_header_right a.alternativeSubMenuLink,
+table.pageTabsInner span.other:hover span.fading {
   background-image: none !important;
 }
 
@@ -180,6 +220,7 @@ a:hover {
 }
 
 /* animations */
-div.listDisplayHeaderContainer {
+table.list td.listheader:hover,
+table.list td.listheader:hover .listDisplayHeaderContainer {
   transition: background-color 0.1s;
 }
