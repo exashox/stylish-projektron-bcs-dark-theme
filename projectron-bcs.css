@@ -181,6 +181,15 @@ div.autosuggest ul li.as_highlight a {
   border-color: #666;
 }
 
+/* toolbox tip */
+div#stopwatchform_container.display {
+  background-color: #334 !important;
+}
+
+div#stopwatchform_container div.title {
+  color: #bbb;
+}
+
 /* today */
 span.today,
 table.list tbody tr.default td.content.today,
@@ -284,6 +293,11 @@ td.calendar_header_today a.event_sunday {
 /* highlight */
 table.list td.listheader_today {
   color: #bbf;
+}
+
+/* stopwatch */
+span.stopWatchTime {
+  color: #444;
 }
 
 table.list td.listheader_holyday,
