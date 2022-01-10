@@ -15,6 +15,7 @@ div.submenu_layer,
 table.onlyfixedTableHeaderResizeableStyle,
 .listdisplay_footer_left td.submenu_item_jq,
 .footer_menu_bar,
+div.pn_default,
 .fixedNavigationWrapper_style::before {
   background-color: #333;
 }
@@ -48,7 +49,6 @@ table.pageTabsInner td.more,
 table.boarddisplay_table td.boardelement,
 .boarddisplay_table .component_header_ListDisplay,
 .boarddisplay_table .component_header_TreeDisplay,
-table.list tbody tr.row,
 table.list tbody td.content,
 table.boarddisplay_table table.list td.columnset_header,
 table.boarddisplay_table table.list td.listheader,
@@ -134,6 +134,15 @@ button.clearButton:hover,
   background-color: #444 !important;
 }
 
+/* disabled */
+.pastCell,
+input.textfield:disabled,
+select:disabled,
+textarea:disabled {
+  background-color: #1e1e26 !important;
+}
+
+
 /* button hover */
 button.imagebutton:hover {
   background-color: #666;
@@ -168,7 +177,19 @@ td.today {
   background-color: #334;
 }
 
-/* Fields */
+/* holyday */
+td.overtimecompensation,
+td.vacation,
+.vacation {
+  background-color: #b7cf0d !important;
+  color: #333;
+}
+
+.vacation span.eventInner span {
+  color: #333 !important;
+}
+
+/* fields */
 .DurationAttribute.edit,
 .ExplicitChange_unchanged span.DurationAttribute.edit,
 .settingsAttributeLabelWithOperator,
@@ -230,6 +251,7 @@ td.editheader,
 span.unsortable,
 .leftFixedNavigationContent>span.fixedNavigationClonedLink,
 div.fixedNavigationWrapper_style div.miniNavLinkDiv .fixedNavigationClonedLink,
+a.tabselector,
 input.textfield:disabled,
 select:disabled,
 textarea:disabled {
@@ -252,6 +274,21 @@ table.list td.listheader_today {
 
 table.list td.listheader_holyday {
   color: #a55;
+}
+
+.noChanges>span,
+.structuralChanges>span,
+ins {
+  background-color: rgba(80, 250, 83, 0.1);
+  color: #9cd09c;
+}
+
+a {
+  color: #42b0f6;
+}
+
+a:hover {
+  color: #1280c6;
 }
 
 /* borders */
@@ -303,6 +340,7 @@ div.global_menu a.metanavigation_user {
 /* remove image highlights */
 div.listdisplay.useChronicleCommentLayout table td.rightBlueTimeline.content.newTicketLayoutVersionsObjectImage::before,
 div.listdisplay.useChronicleCommentLayout table tr.row.isVersion td.rightBlueTimeline.content.newTicketLayoutVersionsObjectImage::before,
+div.listdisplay.useChronicleCommentLayout table tr.isVersion td.leftGreenTimeline.content.newTicketLayoutVersionsObjectImage::after,
 td.component_header_right a.default_button,
 td.component_header_right a:not(.settings_visiblity_toggle):not(.settings_visiblity_toggle_on),
 td.component_header_right button,
@@ -328,6 +366,12 @@ div.fixedNavigationWrapper_style div.miniNavLinkDiv a.fixedNavigationClonedLink:
   content: none;
 }
 
+.LikeTabSelector .radiobuttons,
+.newRadioButtons .radiobuttons,
+.tabselectorBackground {
+  box-shadow: none;
+}
+
 div.listdisplay.useChronicleCommentLayout .commentMenu a.submenu_openlink,
 a.showConsultationRequestsButton span {
   color: transparent;
@@ -336,21 +380,6 @@ a.showConsultationRequestsButton span {
 /* highlights */
 ins {
   border: 1px solid rgb(40, 190, 40);
-}
-
-.noChanges>span,
-.structuralChanges>span,
-ins {
-  background-color: rgba(80, 250, 83, 0.1);
-  color: #9cd09c;
-}
-
-a {
-  color: #42b0f6;
-}
-
-a:hover {
-  color: #1280c6;
 }
 
 /* animations */
