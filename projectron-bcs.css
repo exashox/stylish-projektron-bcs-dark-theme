@@ -10,8 +10,18 @@ div.listdisplay.useChronicleCommentLayout table td.commentCol.content,
 div.listdisplay.useChronicleCommentLayout table tr.row.isVersion td.content.additionalContentCol,
 div.listdisplay.useChronicleCommentLayout table tr.row.isVersion td.content.commentCol,
 div.pn_workspace_mybcs,
-div.submenu_layer {
+div.submenu_layer,
+.fixedNavigationWrapper_style,
+table.onlyfixedTableHeaderResizeableStyle,
+.fixedNavigationWrapper_style::before {
   background-color: #333;
+}
+
+/* backgrounds overrides */
+table.onlyfixedTableHeaderResizeableStyle td.columnset_header,
+table.onlyfixedTableHeaderResizeableStyle td.listheader,
+table.onlyfixedTableHeaderResizeableStyle tr.calendar_weekday>td {
+  background-color: #222 !important;
 }
 
 /* controls */
@@ -60,7 +70,14 @@ td.calendar_weekfiller,
 span.calendarControlSeparator,
 span.today,
 input.button,
-input.textfield {
+input.textfield,
+table.list td.columnset_header,
+table.list td.listheader,
+td.editheader,
+table.list td.columnset_header .label,
+td.listsubtotal,
+tr.listsumfooter td.listsumfooter,
+div.fixedNavigationWrapper_style div.miniNavLinkDiv a.fixedNavigationClonedLink:hover {
   background-color: #222;
 }
 
@@ -160,7 +177,11 @@ td.calendar_header_outofmonth a.event,
 td.calendar_header a.event,
 .calendar_weekfiller a,
 .list_footer_legend,
-td.list_footer_legend {
+td.list_footer_legend,
+td.listheader a,
+span.unsortable,
+.leftFixedNavigationContent>span.fixedNavigationClonedLink,
+div.fixedNavigationWrapper_style div.miniNavLinkDiv .fixedNavigationClonedLink {
   color: #bbb;
 }
 
@@ -191,8 +212,16 @@ td.calendar_outofmonth.calendar_events,
 td.calendar_outofmonth.toInformCell,
 td.calendar_outofmonth.userTasksCell,
 td.calendar_header,
-td.calendar_weekfiller {
+td.calendar_weekfiller,
+.rightFixedNavigationContent {
   border-color: #666;
+}
+
+table.onlyfixedTableHeaderResizeableStyle td.columnset_header,
+table.onlyfixedTableHeaderResizeableStyle td.listheader,
+table.onlyfixedTableHeaderResizeableStyle tr.calendar_weekday>td,
+table.onlyfixedTableHeaderResizeableStyle {
+  border-color: #666 !important;
 }
 
 div.global_menu a.metanavigation_bookmark,
@@ -222,6 +251,12 @@ td.component_header_right a.alternativeActionSubMenuLink,
 td.component_header_right a.alternativeSubMenuLink,
 table.pageTabsInner span.other:hover span.fading {
   background-image: none !important;
+}
+
+/* remove content */
+div.fixedNavigationWrapper_style div.miniNavLinkDiv a.fixedNavigationClonedLink::after,
+div.fixedNavigationWrapper_style div.miniNavLinkDiv a.fixedNavigationClonedLink:hover::after {
+  content: none;
 }
 
 div.listdisplay.useChronicleCommentLayout .commentMenu a.submenu_openlink,
