@@ -13,6 +13,8 @@ div.pn_workspace_mybcs,
 div.submenu_layer,
 .fixedNavigationWrapper_style,
 table.onlyfixedTableHeaderResizeableStyle,
+.listdisplay_footer_left td.submenu_item_jq,
+.footer_menu_bar,
 .fixedNavigationWrapper_style::before {
   background-color: #333;
 }
@@ -21,7 +23,7 @@ table.onlyfixedTableHeaderResizeableStyle,
 table.onlyfixedTableHeaderResizeableStyle td.columnset_header,
 table.onlyfixedTableHeaderResizeableStyle td.listheader,
 table.onlyfixedTableHeaderResizeableStyle tr.calendar_weekday>td {
-  background-color: #222 !important;
+  background-color: #333 !important;
 }
 
 /* controls */
@@ -38,7 +40,6 @@ div.token_container_jq,
 .showAsTokens .relationCell>span,
 div.token_jq,
 table.list td.listheader:hover,
-table.list td.listheader:hover div,
 table.list td.content table.indention td.treeMenu a.submenu_openlink:hover,
 table.list td.content table.indention td.treeMenu a.submenu_openlink:hover div,
 table.pageTabsInner span.other,
@@ -70,18 +71,30 @@ td.calendar_weekfiller,
 span.calendarControlSeparator,
 span.today,
 input.button,
-input.textfield,
 table.list td.columnset_header,
 table.list td.listheader,
 td.editheader,
 table.list td.columnset_header .label,
 td.listsubtotal,
 tr.listsumfooter td.listsumfooter,
-div.fixedNavigationWrapper_style div.miniNavLinkDiv a.fixedNavigationClonedLink:hover {
+input.textfield:disabled,
+select:disabled,
+textarea:disabled,
+table.boarddisplay_table table.component_footer.listdisplay_footer,
+table.boarddisplay_table div.singleEffortForm,
+button.clearButton,
+.internalButtons button.imagebutton,
+div.fixedNavigationWrapper_style div.miniNavLinkDiv a.fixedNavigationClonedLink:hover,
+input.textfield,
+.textareaParent textarea {
   background-color: #222;
 }
 
-.calendar_table {
+.calendar_table,
+.ExplicitChange_unchanged span.DurationAttribute.edit,
+.ExplicitChange_unchanged span.DurationAttribute.edit span,
+.DurationAttribute.edit,
+.TimeAttribute {
   background-color: #222 !important;
 }
 
@@ -91,6 +104,7 @@ div.listdisplay table.list tbody tr.row.markRowAsSelected:hover>td:not([rowspan]
 div.listdisplay table.list tbody tr.row:hover>td.slider_cell,
 div.listdisplay table.list tbody tr.row:hover>td:not([rowspan]),
 table.pageTabsInner:hover td.more,
+table.list td.listheader:hover div,
 td.component_header_right a.default_button:hover,
 td.component_header_right a:not(.settings_visiblity_toggle):not(.settings_visiblity_toggle_on):hover,
 td.component_header_right button:hover,
@@ -113,7 +127,9 @@ a.menuButton:hover,
 table.list td.listheader:hover,
 table.list td.listheader:hover .listDisplayHeaderContainer,
 table.pageTabsInner span.other:hover,
-table.pageTabsInner span.current:hover {
+table.pageTabsInner span.current:hover,
+button.clearButton:hover,
+.internalButtons button.imagebutton:hover {
   background-color: #444 !important;
 }
 
@@ -121,11 +137,28 @@ tr.row>.ticket_communication_version .displaylabel {
   color: #888;
 }
 
+/* focus */
+div.submenu_layer table td.selected a,
+div.submenu_layer table td.selectMenuItem a,
+div.submenu_layer table td a.selectMenuItem,
+div.submenu_layer table td a:hover {
+  background-color: #44445a;
+}
+
 /* Selected */
 div.listdisplay table.list tbody tr.markRowAsSelected td.blueMarkRow,
 div.token_focus_jq {
   background-color: #44445a !important;
   border-color: #666;
+}
+
+/* today */
+span.today,
+table.list tbody tr.default td.content.today,
+table.list tbody tr.JProject_operative td.content.today,
+table.list tbody tr.JProject_project td.content.today,
+td.today {
+  background-color: #334;
 }
 
 /* Fields */
@@ -143,6 +176,11 @@ a.menuButton {
   color: #aaa;
 }
 
+/* input style */
+body:not(.navigation) table.settings_dialog:not(.boardsetting) td.group_content .sizeNormalTextField {
+  border-bottom: solid 1px #32a0e6;
+}
+
 /* text */
 html,
 body,
@@ -150,6 +188,8 @@ table,
 span,
 table.pageTabsInner td.currentPageTab_jq a,
 table.pageTabsInner td.inactivePageTab_jq a,
+table.list td.columnset_header,
+table.list td.listheader,
 .ExplicitChange_unchanged span.DurationAttribute.edit span,
 .footer_menu_bar div.footer_menu_label,
 .alternativeFieldSetLayout .component_header .submenu_openlink>.title,
@@ -179,15 +219,32 @@ td.calendar_header a.event,
 .list_footer_legend,
 td.list_footer_legend,
 td.listheader a,
+td.editheader,
 span.unsortable,
 .leftFixedNavigationContent>span.fixedNavigationClonedLink,
-div.fixedNavigationWrapper_style div.miniNavLinkDiv .fixedNavigationClonedLink {
+div.fixedNavigationWrapper_style div.miniNavLinkDiv .fixedNavigationClonedLink,
+input.textfield:disabled,
+select:disabled,
+textarea:disabled {
   color: #bbb;
+}
+
+span.zerovalue {
+  color: #666;
 }
 
 td.calendar_header_today a.event,
 td.calendar_header_today a.event_sunday {
   color: #444 !important;
+}
+
+/* highlight */
+table.list td.listheader_today {
+  color: #bbf;
+}
+
+table.list td.listheader_holyday {
+  color: #a55;
 }
 
 /* borders */
@@ -213,7 +270,12 @@ td.calendar_outofmonth.toInformCell,
 td.calendar_outofmonth.userTasksCell,
 td.calendar_header,
 td.calendar_weekfiller,
-.rightFixedNavigationContent {
+.rightFixedNavigationContent,
+div.submenu_layer table td.separated a,
+div.submenu_layer table tr.settings_separator td,
+.footer_menu_bar.isOpened.isOpenedOnTop div.submenu_layer>table,
+table.boarddisplay_table table.component_footer.listdisplay_footer,
+div.component_separator {
   border-color: #666;
 }
 
