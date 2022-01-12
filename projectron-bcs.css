@@ -1,3 +1,20 @@
+:root {
+  --color-annotation-summary: #b8ebb8;
+  --color-annotation-comment: #ffd7a3;
+  --color-annotation-directquotation: #b4d2ff;
+  --color-annotation-indirectquotation: #e7b7ff;
+  --color-annotation-quickreference: #d52b1e;
+  --color-annotation-highlight: #d66800;
+}
+
+html {
+  --form-background-color: #333;
+  --form-background-color-readonly: #222;
+  --form-background-color-disabled: #222;
+  --form-focus-color: #32a0e6;
+  --form-highlight-color: #32a0e6;
+}
+
 /* title */
 .metanavigation_bg {
   background-color: #421818;
@@ -11,6 +28,7 @@ div.pn_workspace_mybcs {
 /* backgrounds */
 html,
 body,
+div#stopwatchform_container,
 span.label,
 table.list td.listheader,
 table.list td.content table.indention td.treeMenu a.submenu_openlink,
@@ -162,7 +180,8 @@ table.pageTabsInner span.current:hover,
 button.clearButton:hover,
 .internalButtons button.imagebutton:hover,
 div.rightFooterMenu .footerDownloads:hover,
-td.component_header_right .footerDownloads:hover {
+td.component_header_right .footerDownloads:hover,
+div.global_menu div.stopwatchcontainer_inverted a:hover {
   background-color: #444 !important;
 }
 
@@ -177,6 +196,31 @@ textarea:disabled {
 /* button hover */
 button.imagebutton:hover {
   background-color: #666;
+}
+
+/* in input button */
+button.clearButton.clearButtonGray,
+.internalButtons button.imagebutton {
+  background-color: transparent !important;
+}
+
+/* auto complete button */
+.oidtextfield:hover button.autoCompleteButton,
+div.global_menu a.stopWatchList:hover,
+div.global_menu a.stopWatchListRunning:hover {
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4IiB2aWV3Qm94PSIwIDAgMTYgMTYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDUyLjIgKDY3MTQ1KSAtIGh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaCAtLT4KICAgIDx0aXRsZT5iY3MtaW5wdXQtdG9vbC9kcm9wZG93bi1ibHVlQDF4PC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGcgaWQ9ImJjcy1pbnB1dC10b29sL2Ryb3Bkb3duLWJsdWUiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSJiY3MtaW5wdXQtdG9vbC9kcm9wZG93biIgZmlsbD0iIzMyQTBFNiIgZmlsbC1ydWxlPSJub256ZXJvIj4KICAgICAgICAgICAgPHBvbHlnb24gaWQ9IlBhdGgtMjMiIHBvaW50cz0iNy41IDEwLjc5Mjg5MzIgMTIuNjQ2NDQ2NiA1LjY0NjQ0NjYxIDEzLjM1MzU1MzQgNi4zNTM1NTMzOSA3LjUgMTIuMjA3MTA2OCAxLjY0NjQ0NjYxIDYuMzUzNTUzMzkgMi4zNTM1NTMzOSA1LjY0NjQ0NjYxIj48L3BvbHlnb24+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=) !important;
+}
+
+div.global_menu a.stopWatchList:hover,
+div.global_menu a.stopWatchListRunning:hover {
+  background-position: 2px;
+  top: -1px;
+  position: relative;
+}
+
+/* clear button */
+.oidtextfield:hover button.clearButton {
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4IiB2aWV3Qm94PSIwIDAgMTYgMTYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDUyLjIgKDY3MTQ1KSAtIGh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaCAtLT4KICAgIDx0aXRsZT5iY3MtaW5wdXQtdG9vbC9jbGVhci1ibHVlQDF4PC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGcgaWQ9ImJjcy1pbnB1dC10b29sL2NsZWFyLWJsdWUiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSJiY3MtaW5wdXQtdG9vbC9jbGVhciIgZmlsbD0iIzMyQTBFNiIgZmlsbC1ydWxlPSJub256ZXJvIj4KICAgICAgICAgICAgPHBhdGggZD0iTTcuNTEyMTMyLDcuMDg3ODY3OTcgTDExLjc5OTk5OTksMi44IEwxMi4yMjQyNjQsMy4yMjQyNjQwNyBMNy45MzYzOTYwNyw3LjUxMjEzMjAzIEwxMi4yMjQyNjQsMTEuOCBMMTEuNzk5OTk5OSwxMi4yMjQyNjQxIEw3LjUxMjEzMiw3LjkzNjM5NjEgTDMuMjI0MjY0MDcsMTIuMjI0MjY0MSBMMi44LDExLjggTDcuMDg3ODY3OTMsNy41MTIxMzIwMyBMMi44LDMuMjI0MjY0MDcgTDMuMjI0MjY0MDcsMi44IEw3LjUxMjEzMiw3LjA4Nzg2Nzk3IFoiIGlkPSJDb21iaW5lZC1TaGFwZSI+PC9wYXRoPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+) !important;
 }
 
 tr.row>.ticket_communication_version .displaylabel {
@@ -207,6 +251,16 @@ div#stopwatchform_container.display {
 div#stopwatchform_container div.title {
   color: #bbb;
 }
+
+div.global_menu div.stopwatchcontainer_inverted,
+div.global_menu div.stopwatchcontainer_inverted a {
+  background-color: #222 !important;
+}
+
+div.global_menu div.stopwatchcontainer_inverted a span {
+  color: #bbb !important;
+}
+
 
 /* today */
 span.today,
@@ -254,6 +308,7 @@ html,
 body,
 table,
 span,
+div#stopwatchform_container,
 table.pageTabsInner td.currentPageTab_jq a,
 table.pageTabsInner td.inactivePageTab_jq a,
 table.list td.columnset_header,
@@ -383,7 +438,10 @@ table.onlyfixedTableHeaderResizeableStyle,
 div.listdisplay.useChronicleCommentLayout td.leftGreenTimeline>.objectimageattributedisplay,
 div.listdisplay.useChronicleCommentLayout td.leftGreenTimeline>a,
 div.listdisplay.useChronicleCommentLayout td.rightBlueTimeline>.objectimageattributedisplay,
-div.listdisplay.useChronicleCommentLayout td.rightBlueTimeline>a {
+div.listdisplay.useChronicleCommentLayout td.rightBlueTimeline>a,
+.startBookOnListItem,
+div.stopWatchForm .buttonContainer .component_header_right>input:nth-child(2),
+div.stopWatchListEditForm .buttonContainer .component_header_right>input:nth-child(2) {
   border-color: #666 !important;
 }
 
