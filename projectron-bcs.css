@@ -29,6 +29,7 @@ div.autosuggest ul {
 }
 
 /* controls */
+#PageMap,
 div.gridster .component_header_ListDisplay,
 div.gridster .component_header_TreeDisplay,
 div.permanent_settings td.selectionbar,
@@ -77,6 +78,7 @@ table.list td.listheader,
 td.editheader,
 table.list td.columnset_header .label,
 td.listsubtotal,
+table.pageTabsInner td.morecurrent,
 tr.listsumfooter td.listsumfooter,
 input.textfield:disabled,
 select:disabled,
@@ -275,6 +277,7 @@ span.unsortable,
 div.fixedNavigationWrapper_style div.miniNavLinkDiv .fixedNavigationClonedLink,
 a.tabselector,
 span.entitypathtitle_extension,
+.pagemap_node_title_2,
 input.textfield:disabled,
 select:disabled,
 textarea:disabled {
