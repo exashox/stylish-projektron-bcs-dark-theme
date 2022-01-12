@@ -109,7 +109,10 @@ input.textfield,
 .TimeAttribute,
 .TimeAttribute.readOnly,
 div.listdisplay.useChronicleCommentLayout table tr.row.isVersion td.content.additionalContentCol,
-div.listdisplay.useChronicleCommentLayout table tr.row.isVersion td.content.commentCol {
+div.listdisplay.useChronicleCommentLayout table tr.row.isVersion td.content.commentCol,
+div.listdisplay.useChronicleCommentLayout table td.additionalContentCol.content,
+div.listdisplay.useChronicleCommentLayout table td.commentCol.content,
+td.component_header_right a.default_button.hasNoSelectedRows {
   background-color: #222 !important;
 }
 
@@ -396,7 +399,13 @@ input.button {
 .fixedNavigationWrapper_style a.alternativeActionSubMenuLink,
 td.component_header_right a.alternativeActionSubMenuLink,
 td.component_header_right a.alternativeSubMenuLink,
-table.pageTabsInner span.other:hover span.fading {
+table.pageTabsInner span.other:hover span.fading,
+a.possible_default_button.hasChanges,
+dialog input.defaultbutton,
+div.thickbox input.defaultbutton,
+input.default_button,
+input.possible_default_button.hasChanges,
+td.component_header_right a.default_button.hasNoSelectedRows {
   background-image: none !important;
 }
 
