@@ -126,7 +126,8 @@ input.textfield,
 .tabselectorBackground,
 .richTextEditor_jq,
 .CreateFormAttribute,
-.customScroll {
+.customScroll,
+nav.newNavigator {
   background-color: #222;
 }
 
@@ -235,12 +236,26 @@ div.submenu_layer table td a:hover {
   background-color: #44445a;
 }
 
-/* Selected */
+/* hover */
+div.listdisplay table.list tbody tr.markRowAsSelected td.blueMarkRow,
+div.token_focus_jq,
+div.autosuggest ul li.as_highlight a,
+div.submenu_layer td.submenu_item_jq:hover .navigatorSelected,
+nav.newNavigator div#BCSNavigator table.treeDragAndDrop_jq tbody tr.treeDragHandler_jq:hover {
+  background-color: #44445a !important;
+}
+
 div.listdisplay table.list tbody tr.markRowAsSelected td.blueMarkRow,
 div.token_focus_jq,
 div.autosuggest ul li.as_highlight a {
-  background-color: #44445a !important;
   border-color: #666;
+}
+
+/* selected */
+nav.newNavigator .navigatorSelected,
+nav.newNavigator table.list tbody tr.row.currentPageEntity,
+nav.newNavigator .navigatorHeader .menu>a.submenu_openlink.submenu_openlink_inverted {
+  background-color: #303040 !important;
 }
 
 /* toolbox tip */
@@ -351,7 +366,9 @@ span.entitypathtitle_extension,
 .pagemap_node_title_2,
 input.textfield:disabled,
 select:disabled,
-textarea:disabled {
+textarea:disabled,
+nav.newNavigator .navigatorHeader .menu>a.submenu_openlink.submenu_openlink_inverted,
+nav.newNavigator .navigatorHeader .menu>a.submenu_openlink {
   color: #bbb;
 }
 
@@ -392,7 +409,10 @@ a {
   color: #42b0f6;
 }
 
-a:hover {
+a:hover,
+a:active span.hover,
+a:focus span.hover,
+a>span.hover:hover {
   color: #1280c6;
 }
 
@@ -441,7 +461,9 @@ div.listdisplay.useChronicleCommentLayout td.rightBlueTimeline>.objectimageattri
 div.listdisplay.useChronicleCommentLayout td.rightBlueTimeline>a,
 .startBookOnListItem,
 div.stopWatchForm .buttonContainer .component_header_right>input:nth-child(2),
-div.stopWatchListEditForm .buttonContainer .component_header_right>input:nth-child(2) {
+div.stopWatchListEditForm .buttonContainer .component_header_right>input:nth-child(2),
+table.list td.groupEntry.lastGroupEntry,
+table.list tr.markRowAsSelected td.groupEntry.lastGroupEntry {
   border-color: #666 !important;
 }
 
@@ -479,6 +501,10 @@ input.default_button,
 input.possible_default_button.hasChanges,
 td.component_header_right a.default_button.hasNoSelectedRows {
   background-image: none !important;
+}
+
+nav.newNavigator .customScroll .viewport {
+  background: none;
 }
 
 /* remove content */
