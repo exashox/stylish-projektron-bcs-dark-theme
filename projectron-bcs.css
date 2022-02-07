@@ -15,6 +15,54 @@ html {
   --form-highlight-color: #32a0e6;
 }
 
+/* login */
+div.login div.login_box>div,
+div.login input.textfield {
+  background-color: rgba(50, 50, 50, 0.85);
+  border-bottom-color: rgba(120, 120, 120, 0.85) !important;
+}
+
+div.login input.textfield:focus {
+  background-color: rgba(60, 90, 120, 0.85) !important;
+  border-bottom-color: rgba(120, 180, 240, 0.85) !important;
+}
+
+div.login input[name="login"],
+div.login input[name="sendResetLinkButton"] {
+  background-color: rgba(50, 50, 50, 0.85) !important;
+  background-image: none !important;
+  border-color: rgba(120, 120, 120, 0.85) !important;
+}
+
+div.login input[name="login"]:hover,
+div.login input[name="sendResetLinkButton"]:hover {
+  background-color: rgba(60, 90, 120, 0.85) !important;
+
+}
+
+div.login td.label,
+div.login input.textfield,
+.login_product .company,
+.login_product .product,
+.forgotCell .instanceName,
+div.login input[name="login"],
+div.login input[name="sendResetLinkButton"] {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.forgotCell .forgotPasswordLink {
+  color: rgba(120, 180, 240, 0.75) !important;
+}
+
+.login_product .company,
+.login_product .product {
+  opacity: 0.9;
+}
+
+.forgotCell .instanceName {
+  opacity: 0.7;
+}
+
 /* title */
 .metanavigation_bg {
   background-color: #421818;
